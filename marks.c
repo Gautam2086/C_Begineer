@@ -1145,40 +1145,94 @@
 
 
 
-//Challenge
-#include<stdio.h>
-#include<stdlib.h>
+////Challenge
+//#include<stdio.h>
+//#include<stdlib.h>
+//
+//struct employee
+//{
+//	char name[20];
+//	char date[20];
+//	float salary;
+//};
+//
+//int main()
+//{
+//	struct employee emp1={"Raj","21/10/2021",50000};
+//
+//	printf("\nName: %s",emp1.name);
+//	printf("\nHire Date: %s",emp1.date);
+//	printf("\nSalary: Rs.%.0f",emp1.salary);
+//
+//	struct employee emp2;
+//
+//	printf("\n \tEnter employee info\n");
+//	printf("Name:");
+//	scanf("%s",&emp2.name);
+//
+//	printf("\nHire date:");
+//	scanf("%s",&emp2.date);
+//
+//	printf("\nName: %s",emp2.name);
+//	printf("\nHire Date: %s",emp2.date);
+//
+//
+//
+//	return 0;
+//}
 
-struct employee
-{
-	char name[20];
-	char date[20];
-	float salary;
-};
-
-int main()
-{
-	struct employee emp1={"Raj","21/10/2021",50000};
-
-	printf("\nName: %s",emp1.name);
-	printf("\nHire Date: %s",emp1.date);
-	printf("\nSalary: Rs.%.0f",emp1.salary);
-
-	struct employee emp2;
-
-	printf("\n \tEnter employee info\n");
-	printf("Name:");
-	scanf("%s",&emp2.name);
-
-	printf("\nHire date:");
-	scanf("%s",&emp2.date);
-
-	printf("\nName: %s",emp2.name);
-	printf("\nHire Date: %s",emp2.date);
 
 
 
-	return 0;
-}
+//#include <stdio.h>
+//#include <stdlib.h>
+//int main()
+//{
+//   int num;
+//   FILE *fptr;
+//   fptr = fopen("program.txt","w");
+//   if(fptr == NULL)
+//   {
+//      printf("Error!");
+//      exit(1);
+//   }
+//   printf("Enter num: ");
+//   scanf("%d",&num);
+//   fprintf(fptr,"%d",num);
+//   fclose(fptr);
+//   return 0;
+//}
 
 
+
+//FILE-IN/OUT
+//#include<stdio.h>
+//#include<stdlib.h>
+//
+//#define FILENAME "program.rtf"
+//
+//int main()
+//{
+//	FILE *fp=NULL;
+//	char ch;
+//	int linescount=0;
+//
+//	fp=fopen(FILENAME,"r");
+//
+//if (fp==NULL)
+//	{
+//	printf("FILE DOESNOT EXIST.");
+//	}
+//while((ch=fgetc(fp))!=EOF)
+//{
+//	if(ch=='\n')
+//		linescount++;
+//}
+//fclose(fp);
+//fp=NULL;
+//
+//printf("Total number of lines RE %d \n",++linescount);
+//
+//
+//    return 0;
+//}

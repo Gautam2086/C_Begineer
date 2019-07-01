@@ -1188,13 +1188,20 @@
 #include<stdlib.h>
 int main()
 {
-	char string[100];
 	FILE *ptr=NULL;
-	ptr=fopen("Untitled.txt⁩","r");
+	char string[70]="This content was produced by me";
 
-	fscanf(ptr,"%s",string);
 
-	printf("The content of this file has %s \n",string);
+	//******* Reading a file ********
+//	ptr=fopen("Untitled 1.txt⁩","r");
+//	fscanf(ptr,"%s",string);
+//	printf("The content of this file has %s \n",string);
+
+	//****** Writing a file ****
+	ptr=fopen("Untitled 1.txt⁩","a");
+	fprintf(ptr,"%s",string);
+
+
 
 	return 0;
 }

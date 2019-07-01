@@ -1183,56 +1183,18 @@
 
 
 
+//FILE_IN/OUT
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+	char string[100];
+	FILE *ptr=NULL;
+	ptr=fopen("Untitled.txt⁩","r");
 
-//#include <stdio.h>
-//#include <stdlib.h>
-//int main()
-//{
-//   int num;
-//   FILE *fptr;
-//   fptr = fopen("program.txt","w");
-//   if(fptr == NULL)
-//   {
-//      printf("Error!");
-//      exit(1);
-//   }
-//   printf("Enter num: ");
-//   scanf("%d",&num);
-//   fprintf(fptr,"%d",num);
-//   fclose(fptr);
-//   return 0;
-//}
+	fscanf(ptr,"%s",string);
 
+	printf("The content of this file has %s \n",string);
 
-
-//FILE-IN/OUT
-//#include<stdio.h>
-//#include<stdlib.h>
-//
-//#define FILENAME "program.rtf"
-//
-//int main()
-//{
-//	FILE *fp=NULL;
-//	char ch;
-//	int linescount=0;
-//
-//	fp=fopen(FILENAME,"r");
-//
-//if (fp==NULL)
-//	{
-//	printf("FILE DOESNOT EXIST.");
-//	}
-//while((ch=fgetc(fp))!=EOF)
-//{
-//	if(ch=='\n')
-//		linescount++;
-//}
-//fclose(fp);
-//fp=NULL;
-//
-//printf("Total number of lines RE %d \n",++linescount);
-//
-//
-//    return 0;
-//}
+	return 0;
+}

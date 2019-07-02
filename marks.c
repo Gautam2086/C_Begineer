@@ -1183,25 +1183,210 @@
 
 
 
-//FILE_IN/OUT
-#include<stdio.h>
-#include<stdlib.h>
+////FILE_IN/OUT
+//#include<stdio.h>
+//#include<stdlib.h>
+//int main()
+//{
+//	FILE *ptr=NULL;
+//	char string[70]="This content was produced by me";
+//
+//
+//	//******* Reading a file ********
+////	ptr=fopen("Untitled 1.txt⁩","r");
+////	fscanf(ptr,"%s",string);
+////	printf("The content of this file has %s \n",string);
+//
+//	//****** Writing a file ****
+//	ptr=fopen("Untitled 1.txt⁩","a");
+//	fprintf(ptr,"%s",string);
+//
+//
+//
+//	return 0;
+//}
+
+
+// int x; // declaration
+// x = 2; // initialisation
+// int x = 4; // init. and declar.
+// print(x) // usage of the initialised x
+
+// sum = sum + arr[i] big form
+// sum += arr[i] small form
+
+//#include <stdio.h>
+//#include <string.h>
+//
+//void add(){
+//	 int sum=0;
+//   int i, n;
+//
+//   printf("enter array size:");
+//   scanf("%d",&n);
+//   int arr[n];
+//
+//
+//   printf("Input:");
+//
+//
+//   for(i=0;i<n;i++)
+//   {
+//	   scanf("%d",&arr[i]);
+//	   sum+=arr[i];
+//   }
+//   printf("Output: %d",sum);
+//}
+//
+//void xyz(){
+//		int mul=1;
+//	   int i, n;
+//
+//	   printf("enter array size:");
+//	   scanf("%d",&n);
+//	   int arr[n];
+//
+//
+//	   printf("Input:");
+//
+//
+//	   for(i=0;i<n;i++)
+//	   {
+//		   scanf("%d",&arr[i]);
+//		   mul*=arr[i];
+//	   }
+//	   printf("Output of multiply: %d",mul);
+//}
+//
+//
+//int main()
+//{
+//	printf("-- Adding --\n");
+//	add();
+//	printf("\n-- Multiplying --\n");
+//	xyz();
+//	return 0;
+//}
+
+
+//#include<stdio.h>
+//#include<stdlib.h>
+//int main()
+//{
+//	char name[5];
+////	name[3]= 'x';
+////	name[4]= 'x';
+//	int i;
+//	printf("Enter your name:");
+//	scanf("%s",&name);
+//
+//    for(i=0;i<5;i++)
+//    {
+//    	printf("%c",name[i]);
+//    	printf("\n");
+//
+//
+//
+////    	if(name[i]=='\0'){
+////			  break;
+////    	}
+//
+//    }
+////		printf("%s",name);
+//
+//	return 0;
+//}
+
+
+
+
+////*******  Vowel or not *******
+//#include<stdio.h>
+//#include<stdlib.h>
+//int main()
+//{
+//	char ch;
+//
+//
+//	printf("Enter Alphabet:");
+//	scanf("%c",&ch);
+//
+//
+//	if(tolower(ch)=='a'||tolower(ch)=='e'||tolower(ch)=='i'||tolower(ch)=='o'||tolower(ch)=='u')
+//	{
+//		printf("Character is vowel");
+//	}
+//	else
+//		printf("Character is consonant");
+//
+//
+//	return 0;
+//}
+
+//********** GREATEST NUMBER AMONG THREE *******
+//#include<stdio.h>
+//#include<stdlib.h>
+//int main()
+//{
+//	float n1;
+//	float n2;
+//	float n3;
+//
+//	printf("Enter 1st number:");
+//	scanf("%f",&n1);
+//
+//	printf("Enter 2nd number:");
+//	scanf("%f",&n2);
+//
+//	printf("Enter 3rd number:");
+//	scanf("%f",&n3);
+//
+//
+//	if(n1>n2){
+//		if(n1>n3)
+//			printf("%f is greatest",n1);
+//		else
+//			printf("%f is greatest",n3);
+//	}
+//	else{
+//
+//		if(n2>n3)
+//			printf("%f is greatest",n2);
+//		else
+//			printf("%f is greatest",n3);
+//	}
+//			return 0;
+//}
+
+
+//****TO CHECK WHETHER LEAP YEAR OR NOT *****
+#include <stdio.h>
 int main()
 {
-	FILE *ptr=NULL;
-	char string[70]="This content was produced by me";
+	int year;
 
+	printf("Enter year:");
+	scanf("%d",&year);
 
-	//******* Reading a file ********
-//	ptr=fopen("Untitled 1.txt⁩","r");
-//	fscanf(ptr,"%s",string);
-//	printf("The content of this file has %s \n",string);
-
-	//****** Writing a file ****
-	ptr=fopen("Untitled 1.txt⁩","a");
-	fprintf(ptr,"%s",string);
-
-
+	if(year%4==0)
+	{
+		if( year%100 == 0)
+		{
+			if ( year%400 == 0)
+				printf("%d is a leap year.", year);
+			else
+				printf("%d is not a leap year.", year);
+		}
+		else
+			printf("%d is a leap year.", year );
+	}
+		else
+	        printf("%d is not a leap year.", year);
 
 	return 0;
 }
+
+
+
+
+

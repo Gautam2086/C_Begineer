@@ -1359,29 +1359,74 @@
 //}
 
 
-//****TO CHECK WHETHER LEAP YEAR OR NOT *****
+////****TO CHECK WHETHER LEAP YEAR OR NOT *****
+//#include <stdio.h>
+//int main()
+//{
+//	int year;
+//
+//	printf("Enter year:");
+//	scanf("%d",&year);
+//
+//	if(year%4==0)
+//	{
+//		if( year%100 == 0)
+//		{
+//			if ( year%400 == 0)
+//				printf("%d is a leap year.", year);
+//			else
+//				printf("%d is not a leap year.", year);
+//		}
+//		else
+//			printf("%d is a leap year.", year );
+//	}
+//		else
+//	        printf("%d is not a leap year.", year);
+//
+//	return 0;
+//}
+
+
+
+////************CHECK IF NUMBER IS POSITIVE OR NOT*******
+//#include <stdio.h>
+//int main()
+//{
+//	float a;
+//	printf("Enter the number:");
+//	scanf("%f",&a);
+//		if(a>0)
+//			printf("Number is positive");
+//		else{
+//			if(a==0)
+//				printf("Neither +ve nor -ve Hahaha");
+//			else
+//			printf("Number is negative ");
+//		}
+//		return 0;
+//}
+
+
+
+//**************To Check if it's a Character or not *************
 #include <stdio.h>
 int main()
 {
-	int year;
+	char ch;
 
-	printf("Enter year:");
-	scanf("%d",&year);
-
-	if(year%4==0)
-	{
-		if( year%100 == 0)
-		{
-			if ( year%400 == 0)
-				printf("%d is a leap year.", year);
+	printf("Enter anything:");
+	scanf("%c",&ch);
+			if(tolower(ch)<97||tolower(ch)>122)
+				printf("This isn't a character");
 			else
-				printf("%d is not a leap year.", year);
-		}
-		else
-			printf("%d is a leap year.", year );
-	}
-		else
-	        printf("%d is not a leap year.", year);
+				printf("This is a character");
+
+//	printf("Ascii %d",ch);
+
+
+//97-122 ASCIICode for small alphabets
+//65-90  for capital ALPHABETS
+
 
 	return 0;
 }

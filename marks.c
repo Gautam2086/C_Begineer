@@ -1408,30 +1408,95 @@
 
 
 
-//**************To Check if it's a Character or not *************
+
+//#include <stdio.h>
+//int main()
+//{
+//	char ch;
+//
+//	printf("Enter anything:");
+//	scanf("%c",&ch);
+//			if((ch<97||ch>122)&&(ch<65||ch>90))
+//				printf("This isn't a character");
+//			else
+//			printf("This is a character");
+//
+////	printf("Ascii %d",ch);
+//
+//
+////97-122 ASCIICode for small alphabets
+////65-90  for capital ALPHABETS
+//
+//
+//	return 0;
+//}
+
+
+
+////****** To Calculate the Sum of Natural Numbers *******
+//#include <stdio.h>
+//int main()
+//{
+//	int n;
+//	int i;
+//	int sum=0;
+//printf("Enter value of n:");
+//scanf("%d",&n);
+//
+//
+//for(i=0;i<=n;i++)
+//{
+//	sum+=i;
+//}
+//
+//printf("Sum is %d",sum);
+//
+//
+//
+//	return 0;
+//}
+
+
+
+
+////**** FACTORIAL OF A NUMBER ****
+//#include <stdio.h>
+//int main()
+//{
+//	int i;
+//	int n;
+//	int factorial =1;
+//
+//
+//	printf("Enter number:");
+//	scanf("%d",&n);
+//
+//	if(n > 0){
+//		for(i=n;i>=1;i--){
+//			factorial*=i;
+//		}
+//
+//		printf("Factorial is %d",factorial);
+//	}
+//
+//	else{
+//		printf("Factorial cannot be calculated");
+//	}
+//
+//	return 0;
+//}
+
+
+//******* Generate Multiplication Table *******
 #include <stdio.h>
-int main()
-{
-	char ch;
-
-	printf("Enter anything:");
-	scanf("%c",&ch);
-			if(tolower(ch)<97||tolower(ch)>122)
-				printf("This isn't a character");
-			else
-				printf("This is a character");
-
-//	printf("Ascii %d",ch);
-
-
-//97-122 ASCIICode for small alphabets
-//65-90  for capital ALPHABETS
-
-
-	return 0;
+int main(){
+	int i;
+	int n;
+	    printf("Enter number: ");
+	    scanf("%d",&n);
+	    	for(i=1; i<=10; ++i){
+	    	printf("\n %d",n*i);
+	    }
 }
-
-
-
 
 

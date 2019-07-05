@@ -1488,15 +1488,55 @@
 
 
 //******* Generate Multiplication Table *******
+//#include <stdio.h>
+//int main(){
+//	int i;
+//	int n;
+//	    printf("Enter number: ");
+//	    scanf("%d",&n);
+//	    for(i=1; i<=10; ++i){
+//	   	printf("\n %d",n*i);
+//	    }
+//	    return 0;
+//}
+//
+
+
+
+
+//#include <stdio.h>
+//int main(){
+//	int n;
+//	int i;
+//	int x;
+//	int y=0;
+//	int z=1;
+//
+//	printf("Enter number of terms:");
+//	scanf("%d",&n);
+//
+//	for(i=0;i<=n;i++){
+//		printf("%d ,",y);
+////		x=y+z;
+////		x=z;
+////		z=x;
+//
+//
+//	}
+//	return 0;
+//}
+
+
+
+
+//Display Characters from A to Z Using Loop
 #include <stdio.h>
 int main(){
-	int i;
-	int n;
-	    printf("Enter number: ");
-	    scanf("%d",&n);
-	    	for(i=1; i<=10; ++i){
-	    	printf("\n %d",n*i);
-	    }
+    char ch;
+
+    for(ch='A';ch<='Z';ch++){
+    		printf("%c\n",ch);
 }
 
-
+	return 0;
+	}

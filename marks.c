@@ -1504,7 +1504,7 @@
 
 
 
-//#include <stdio.h>
+//#include<stdio.h>
 //int main(){
 //	int n;
 //	int i;
@@ -1529,14 +1529,122 @@
 
 
 
-//Display Characters from A to Z Using Loop
-#include <stdio.h>
-int main(){
-    char ch;
+////Display Characters from A to Z Using Loop
+//#include <stdio.h>
+//int main(){
+//    char ch;
+//
+//    for(ch='A';ch<='Z';ch++){
+//    		printf("%c\t",ch);
+//}
+//
+//	return 0;
+//	}
 
-    for(ch='A';ch<='Z';ch++){
-    		printf("%c\n",ch);
-}
 
-	return 0;
-	}
+////****** GCD ****
+//#include<stdio.h>
+//int main()
+//{
+//    int n1, n2, i, gcd;
+//    printf("Enter two integers: ");
+//    scanf("%d %d", &n1, &n2);
+//    for(i=1; i <= n1 && i <= n2; ++i)
+//    {
+//
+//        if(n1%i==0 && n2%i==0)
+//            gcd = i;
+//    }
+//    printf("G.C.D is %d", gcd);
+//    return 0;
+//}
+
+
+
+
+////****** LCM ****
+//#include<stdio.h>
+//int main()
+//{
+//    int n1, n2, i, gcd,lcm;
+//    printf("Enter two integers: ");
+//    scanf("%d %d", &n1, &n2);
+//    for(i=1; i <= n1 && i <= n2; ++i)
+//    {
+//
+//        if(n1%i==0 && n2%i==0)
+//            gcd = i;
+//    }
+//
+//
+//    lcm = (n1*n2)/gcd;
+//        printf("The LCM is %d.", lcm);
+//    return 0;
+//}
+
+
+
+
+//// **** number of digits in an integer *****
+//#include <stdio.h>
+//int main(){
+//	long long n,count=0;
+//
+//	printf("Enter an integer: ");
+//	    scanf("%lld", &n);
+//
+//	while(n != 0){
+//	          count++;
+//
+//	             n/= 10;
+//	        }
+//
+//	        printf("Total digits: %lld", count);
+//	        return 0;
+//}
+
+
+//// *** Reverse a Number ***
+//#include <stdio.h>
+//int main(){
+//	int x,y=0,r;
+//
+//	printf("Enter number");
+//	scanf("%d",&x);
+//
+//
+//	while(x!=0){
+//		r=x%10;
+//		y=y*10+r;
+//		x=x/10;
+//	}
+//
+//	printf("Reverse is %d",y);
+//
+//	return 0;
+//}
+
+
+
+// ***** Calculate the Power of a Number *****
+//#include <stdio.h>
+//int main(){
+//	int x,y,z=1,i;
+//	printf("Enter a number and its power");
+//	scanf("%d %d",&x,&y);
+//
+//	for(i=1;i<=y;i++){
+//		z=z*x;
+//	}
+//
+//
+//
+//
+//	printf("Result is %d",z);
+//
+//	return 0;
+//}
+
+
+
+

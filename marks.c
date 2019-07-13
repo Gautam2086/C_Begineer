@@ -1648,3 +1648,41 @@
 
 
 
+// ***** Whether a Number is Prime or Not ****
+//#include <stdio.h>
+//int main(){
+//	int n,i;
+//
+//	printf("Enter a number:");
+//	scanf("%d",&n);
+//	for(i=2;i<n;i++)
+//		if(n%i==0)
+////		break;
+////	if(i==n)
+//		printf("%d number is not prime",n);
+//	else
+//		printf("%d number is prime",n);
+//
+//
+//	return 0;
+//}
+
+
+
+#include <stdio.h>
+int main(){
+	int x,y,z;
+
+	printf("Enter two numbers (interval)");
+	scanf("%d %d",&x,&y);
+
+
+
+
+	printf("Prime numbers between %d and %d are %d",x,y,z);
+
+	return 0;
+}
+
+
+

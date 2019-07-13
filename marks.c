@@ -1655,31 +1655,42 @@
 //
 //	printf("Enter a number:");
 //	scanf("%d",&n);
-//	for(i=2;i<n;i++)
+//	int root = sqrt(n);
+//	for(i=2; i<=root; i++){
 //		if(n%i==0)
-////		break;
-////	if(i==n)
-//		printf("%d number is not prime",n);
-//	else
+//		break;
+//	}
+//
+//
+//	if(i==n)
 //		printf("%d number is prime",n);
+//	else
+//		printf("%d number is not prime",n);
 //
 //
 //	return 0;
 //}
 
 
-
+// ***** Display Prime Numbers Between Two Intervals ****
 #include <stdio.h>
 int main(){
-	int x,y,z;
+	int x,y,i,j;
 
 	printf("Enter two numbers (interval)");
 	scanf("%d %d",&x,&y);
+	for(i=x; i<=y; i++){
+		for(j=2; j<=i; j++){
+			if(i%j==0)
+				break;
+		}
+			if(i==j)
+					printf("Prime number b/w given interval is %d\n",i);
+
+	}
 
 
-
-
-	printf("Prime numbers between %d and %d are %d",x,y,z);
+//			printf("Prime numbers between %d and %d are %d",x,y,z);
 
 	return 0;
 }

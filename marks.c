@@ -1673,27 +1673,186 @@
 
 
 // ***** Display Prime Numbers Between Two Intervals ****
-#include <stdio.h>
-int main(){
-	int x,y,i,j;
+//#include <stdio.h>
+//int main(){
+//	int x,y,i,j;
+//
+//	printf("Enter two numbers (interval)");
+//	scanf("%d %d",&x,&y);
+//	for(i=x; i<=y; i++){
+//		for(j=2; j<=i; j++){
+//			if(i%j==0)
+//				break;
+//		}
+//			if(i==j)
+//					printf("Prime number b/w given interval is %d\n",i);
+//
+//	}
+//
+//
+////			printf("Prime numbers between %d and %d are %d",x,y,z);
+//
+//	return 0;
+//}
 
-	printf("Enter two numbers (interval)");
-	scanf("%d %d",&x,&y);
-	for(i=x; i<=y; i++){
-		for(j=2; j<=i; j++){
-			if(i%j==0)
-				break;
+
+
+
+
+//// **** Display Factors of a Number ****
+//#include <stdio.h>
+//int main(){
+//	int n,i;
+//
+//	printf("Enter a positive integer:");
+//	scanf("%d",&n);
+//
+//	printf("Factors of %d are:",n);
+//	for(i=1; i<=n; i++){
+//		if(n%i==0)
+//			printf("%d\n",i);
+//	}
+//
+//	return 0;
+//}
+
+
+
+// ***** half pyramid *****
+//#include <stdio.h>
+//int main(){
+//	int j,i;
+//for(j=1;j<=5;j++){
+//	for(i=1;i<=5;i++){
+//		if(i<=j)
+//		printf("*");
+//		else
+//			printf(" ");
+//	}
+//	printf("\n");
+//}
+//
+//
+//
+//	return 0;
+//}
+
+
+
+
+
+// ***** half pyramid a using numbers ******
+//#include <stdio.h>
+//int main(){
+//	int j,i;
+//for(j=1;j<=5;j++){
+//	for(i=1;i<=5;i++){
+//		if(i<=j)
+//		printf("%d",i);
+//		else
+//			printf(" ");
+//	}
+//	printf("\n");
+//}
+//
+//
+//
+//	return 0;
+//}
+
+
+
+
+//// ***** Inverted half pyramid *****
+//#include <stdio.h>
+//int main(){
+//	int j,i;
+//for(j=5;j>=1;j--){
+//	for(i=1;i<=5;i++){
+//		if(i<=j)
+//		printf("* ");
+//		else
+//			printf(" ");
+//	}
+//	printf("\n");
+//}
+//
+//
+//
+//	return 0;
+//}
+
+
+
+
+// ***** Inverted half pyramid using numbers *****
+//#include<stdio.h>
+//int main(){
+//	int i,j;
+//
+//
+//	for(j=5;j>=1;j--){
+//		for(i=1;i<=5;i++){
+//			if(i<=j)
+//				printf("%d ",i);
+//			else
+//				printf(" ");
+//		}
+//		printf("\n");
+//	}
+//
+//
+//	return 0;
+//}
+
+
+
+
+
+// **** print full pyramid ****
+//#include<stdio.h>
+//int main(){
+//	int i,j;
+//
+//
+//	for(j=5;j>=1;j--){
+//		for(i=1;i<=5;i++){
+//			if(i>=j)
+//				printf("* ");
+//			else
+//				printf(" ");
+//		}
+//		printf("\n");
+//
+//	}
+//
+//	return 0;
+//}
+
+
+
+
+
+// **** print pyramid using numbers ***
+#include<stdio.h>
+int main(){
+int i,j,k;
+
+	for(i=1;i<=4;i++){
+		k=i;
+		for(j=1;j<=7;j++){
+			if((j>=5-i)&&(j<=3+i)){
+				printf("%d",k);
+				j<4?k++:k--;
+
+			}
+			else
+				printf(" ");
+
 		}
-			if(i==j)
-					printf("Prime number b/w given interval is %d\n",i);
+		printf("\n");
 
 	}
 
-
-//			printf("Prime numbers between %d and %d are %d",x,y,z);
-
 	return 0;
 }
-
-
-

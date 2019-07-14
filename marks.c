@@ -1834,25 +1834,134 @@
 
 
 // **** print pyramid using numbers ***
+//#include<stdio.h>
+//int main(){
+//int i,j,k;
+//
+//	for(i=1;i<=4;i++){
+//		k=i;
+//		for(j=1;j<=7;j++){
+//			if((j>=5-i)&&(j<=3+i)){
+//				printf("%d",k);
+//				j<4?k++:k--;
+//
+//			}
+//			else
+//				printf(" ");
+//
+//		}
+//		printf("\n");
+//
+//	}
+//
+//	return 0;
+//}
+
+
+
+
+//// ***** Inverted full pyramid ****
+//#include<stdio.h>
+//int main(){
+//	int i,j;
+//
+//	for(i=1;i<=3;i++){
+//		for(j=1;j<=5;j++){
+//			if((j>=i)&&(j<=6-i))
+//				printf("*");
+//			else
+//				printf(" ");
+//		}
+//		printf("\n");
+//	}
+//
+//	return 0;
+//}
+
+
+
+// **** Alternative stars ****
+//#include<stdio.h>
+//int main(){
+//	int i,j,k=1;
+//
+//	for(i=0;i<=4;i++){
+//		for(j=0;j<=7;j++){
+//			if((j>=5-i)&&(j<=3+i)&&k){
+//						printf("*");
+//						k=0;
+//			}
+//			else{
+//						printf(" ");
+//						k=1;
+//						}
+//		}
+//		printf("\n");
+//	}
+//
+//
+//
+//	return 0;
+//}
+
+
+
+//// *** Print Floyd's Triangle **
+//#include<stdio.h>
+//int main(){
+//	int i,j,n=1;
+//
+//
+//	for(i=1;i<=4;i++){
+//		for(j=1;j<=i;j++){
+//			printf("%d",n);
+//			n++;
+//		}
+//		printf("\n");
+//	}
+//
+//
+//	return 0;
+//}
+
+
+
+// ***** Simple Calculator Using switch...case ***88
 #include<stdio.h>
 int main(){
-int i,j,k;
+	char o;
+	int x,y;
 
-	for(i=1;i<=4;i++){
-		k=i;
-		for(j=1;j<=7;j++){
-			if((j>=5-i)&&(j<=3+i)){
-				printf("%d",k);
-				j<4?k++:k--;
+	printf("Enter operator (+, -, *,/):");
+	scanf("%c",&o);
 
-			}
-			else
-				printf(" ");
+	printf("Enter two numbers:");
+	scanf("%d %d",&x,&y);
 
-		}
-		printf("\n");
+
+	switch(o){
+	case '+':
+		printf("%d + %d = %d",x,y,(x+y));
+		break;
+
+	case '-':
+		printf("%d - %d = %d",x,y,(x-y));
+		break;
+
+	case '*':
+		printf("%d * %d = %d",x,y,(x*y));
+		break;
+
+	case '/':
+		printf("%d / %d = %d",x,y,(x%y));
+		break;
+
+	default:
+		printf("Error!!");
+		break;
 
 	}
 
-	return 0;
+
+return 0;
 }

@@ -1926,42 +1926,131 @@
 
 
 
-// ***** Simple Calculator Using switch...case ***88
-#include<stdio.h>
-int main(){
-	char o;
-	int x,y;
+// ***** Simple Calculator Using switch...case ***
+//#include<stdio.h>
+//int main(){
+//	char o;
+//	int x,y;
+//
+//	printf("Enter operator (+, -, *,/):");
+//	scanf("%c",&o);
+//
+//	printf("Enter two numbers:");
+//	scanf("%d %d",&x,&y);
+//
+//
+//	switch(o){
+//	case '+':
+//		printf("%d + %d = %d",x,y,(x+y));
+//		break;
+//
+//	case '-':
+//		printf("%d - %d = %d",x,y,(x-y));
+//		break;
+//
+//	case '*':
+//		printf("%d * %d = %d",x,y,(x*y));
+//		break;
+//
+//	case '/':
+//		printf("%d / %d = %d",x,y,(x%y));
+//		break;
+//
+//	default:
+//		printf("Error!!");
+//		break;
+//
+//	}
+//
+//
+//return 0;
+//}
 
-	printf("Enter operator (+, -, *,/):");
-	scanf("%c",&o);
-
-	printf("Enter two numbers:");
-	scanf("%d %d",&x,&y);
 
 
-	switch(o){
-	case '+':
-		printf("%d + %d = %d",x,y,(x+y));
-		break;
-
-	case '-':
-		printf("%d - %d = %d",x,y,(x-y));
-		break;
-
-	case '*':
-		printf("%d * %d = %d",x,y,(x*y));
-		break;
-
-	case '/':
-		printf("%d / %d = %d",x,y,(x%y));
-		break;
-
-	default:
-		printf("Error!!");
-		break;
-
-	}
 
 
-return 0;
-}
+
+////***Functions***
+//#include<stdio.h>
+//int main() {
+//
+//	print();
+//	a();
+//	return 0;
+//}
+//
+//
+//
+//print()
+//{printf("Hello World");
+//}
+//
+//a(){
+//	printf("\nHello");
+//}
+
+
+
+//**** Express a number as a sum of two prime numbers ****
+//#include<stdio.h>
+//int main(){
+//	int n,x,i;
+//
+//
+//	printf("Enter a positive integer:");
+//	scanf("%d",&x);
+//
+//	for(i=2;i<=x-i ;i=nxtprime(i)){
+//		if(isprime(x-i))
+//			printf("%d + %d=%d\n",i,x-i,x);
+//
+//	}
+//}
+//int nxtprime(int n){
+//
+//	do
+//		n++;
+//	while(!isprime(n));
+//	return(n);
+//
+//
+//int isprime(){
+//
+//	int i;
+//for(i=2; i<n; i++)
+//	if(n%i==0)
+//		return 0;
+//
+//return (1);
+//}
+
+
+
+//***** Calculate Average Using Arrays ****
+//#include<stdio.h>
+//int main(){
+//	int n,i;
+//	float ar[100];
+//	float average;
+//	float sum=0;
+//
+//	printf("Enter number of elements:");
+//	scanf("%d",&n);
+//
+//
+//	for(i=1;i<=n;i++){
+//		printf("Enter number:");
+//		scanf("%f",&ar[i]);
+//		sum+=ar[i];
+//	}
+//
+//	average=(sum/n);
+//
+//	printf("Sum is %f",sum);
+//	printf("\nAverage is %f",average);
+//
+//	return 0;
+//}
+
+

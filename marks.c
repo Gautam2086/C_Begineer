@@ -1,4 +1,6 @@
 //#include <stdio.h>
+
+
 //SHOW DIGITS
 //int main()
 //{
@@ -1990,7 +1992,7 @@
 
 
 
-//**** Express a number as a sum of two prime numbers ****
+//**** Number as a sum of two prime numbers ****
 //#include<stdio.h>
 //int main(){
 //	int n,x,i;
@@ -2050,5 +2052,69 @@
 //
 //	return 0;
 //}
+
+
+//// ******* Find Largest Element of an Array *****
+//#include<stdio.h>
+//int main(){
+//	int n,i;
+//	float ar[100];
+//	float max[0];
+//
+//		printf("Enter number of elements:");
+//		scanf("%d",&n);
+//
+//
+//		for(i=1;i<=n;i++){
+//			printf("Enter number:");
+//			scanf("%f",&ar[i]);
+//		}
+//
+//		for(i=1;i<=n;i++){
+//			if((max[0])<(ar[i]))
+//				max[0]=ar[i];
+//		}
+//		printf("Largest Element is %.2f ",max[0]);
+//
+//
+//	return 0;
+//}
+
+
+// ***** Program to Calculate Standard Deviation *****
+//#include<stdio.h>
+//int main(){
+//	int i;
+//	float arr[10],sum=0,mean,mean1,sum1=0,stdvrnc;
+//
+//	printf("Enter 3 elements:");
+//	for(i=0;i<=2;i++){
+//		scanf("%f",&arr[i]);
+//	}
+//
+//
+////printf("mean is %f",mean);
+//
+//for(i=0;i<=2;i++){
+//	sum+=arr[i];
+//}
+//mean=(sum/3);
+//
+//printf("mean is %f",mean);
+//
+//for(i=0; i<3; i++){
+//       sum1 += pow(arr[i] - mean, 2);
+//}
+//
+//mean1=(sum1/3);
+//stdvrnc=sqrt(mean1);
+//
+//printf("Standard Deviation = %f", stdvrnc);
+//
+//	return 0;
+//}
+
+
+
 
 

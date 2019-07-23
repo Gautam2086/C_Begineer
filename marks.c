@@ -2117,4 +2117,160 @@
 
 
 
+// **** Program to Add Two Matrix Using Multi-dimensional Arrays ****
+//#include<stdio.h>
+//int main(){
+//	int A[3][3],B[3][3],C[3][3],i,j;
+//
+//	printf("Enter 9numbers for first matrix");
+//	for(i=0;i<3;i++){
+//		for(j=0;j<3;j++){
+//			scanf("%d",&A[i][j]);
+//		}
+//	}
+//
+//	printf("Enter 9numbers for second matrix");
+//	for(i=0;i<3;i++){
+//			for(j=0;j<3;j++){
+//				scanf("%d",&B[i][j]);
+//			}
+//		}
+//
+//	printf("\nSum of matrices is:\n ");
+//	for(i=0;i<3;i++){
+//			for(j=0;j<3;j++){
+//				C[i][j]=A[i][j]+B[i][j];
+//				printf("%d\n",C[i][j]);
+//			}
+//			printf("\n");
+//		}
+//
+//
+//	return 0;
+//}
+
+
+
+
+
+// *** Multiplication {ERROR} ******
+//#include<stdio.h>
+//int main(){
+//	int A[3][3],B[3][3],C[3][3],i,j,k,sum=0;
+//
+//	printf("Enter 9numbers for first matrix");
+//	for(i=0;i<3;i++){
+//		for(j=0;j<3;j++){
+//			scanf("%d",&A[i][j]);
+//		}
+//	}
+//
+//	printf("Enter 9numbers for second matrix");
+//	for(i=0;i<3;i++){
+//			for(j=0;j<3;j++){
+//				scanf("%d",&B[i][j]);
+//			}
+//		}
+//
+//	printf("\nMultiplication of matrices is:\n ");
+//	for(i=0;i<3;i++){
+//			for(j=0;j<3;j++){
+//				for(k=0;k<3;k++);
+//				sum=sum+A[i][k]*B[k][j];
+//				C[i][j]=sum;
+//			}
+//		}
+//	for(i=0;i<3;i++){
+//				for(j=0;j<3;j++){
+//					printf("%d ",C[i][j]);
+//					printf("\n");
+//				}
+//	}
+//	return 0;
+//}
+
+
+
+// ***********OUTSIDE ROW--INSIDE COLUMN************
+
+
+//Program to Find Transpose of a Matrix
+//#include<stdio.h>
+//int main(){
+//	int i,j,A[2][3];
+//
+//
+//
+//	printf("Enter 6 numbers for matrix");
+//	for(i=0;i<2;i++){
+//			for(j=0;j<3;j++){
+//				scanf("%d",&A[i][j]);
+//			}
+//	}
+//
+//	printf("\nEntered matrix:\n");
+//	for(i=0;i<2;i++){
+//				for(j=0;j<3;j++){
+//					printf(" %d ",A[i][j]);
+//				}
+//				printf("\n");
+//		}
+//
+//	printf("\nTranspose of the matrix is:\n");
+//	for(i=0;i<3;i++){
+//				for(j=0;j<2;j++){
+//					printf(" %d  ",A[j][i]);
+//				}
+//				printf("\n\n");
+//		}
+//
+//	return 0;
+//}
+
+
+
+//***** Access Elements of an Array Using Pointer *****
+//#include<stdio.h>
+//int main(){
+//	int arr[5],i;
+//
+//	printf("Enter elements:");
+//	for(i=0;i<6;i++){
+//	scanf("%d",&arr[i]);
+//	}
+//
+//	for(i=0;i<6;i++){
+//		printf("%d \n",arr[i]);
+//		}
+//
+//	return 0;
+//}
+
+
+// **** Swap Elements Using Call by Reference ****
+//#include<stdio.h>
+//int main(){
+//	int a,b,c,a1,b1,c1;
+//
+//	printf("Enter a,b,c respectively");
+//	scanf("%d",&a);
+//	scanf("%d",&b);
+//	scanf("%d",&c);
+//
+//
+//	a1=c;
+//	b1=a;
+//	c1=b;
+//	printf("After Swapping");
+//	printf("\na= %d",a1);
+//	printf("\nb= %d",b1);
+//	printf("\nc= %d",c1);
+//
+//	return 0;
+//}
+
+
+
+
+
 

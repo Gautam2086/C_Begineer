@@ -2270,7 +2270,77 @@
 //}
 
 
+// ***** Find the Frequency of Characters in a String *****
+//#include<stdio.h>
+//int main(){
+//	char string[100],ch,i,frequency=0;
+//
+//	printf("Enter String:");
+//	gets(string);
+
+//	printf("Enter character to find frequency");
+//	scanf("%c",&ch);
+//
+//	for(i=0;string[i] != '\0';i++){
+//		if(string[i]==ch){
+//			frequency++;
+//		}
+//	}
+//
+//printf("Frequency is : %d",frequency);
+//	return 0;
+//}
 
 
+//***** Count the Number of Vowels, Consonants and so on ******
+#include<stdio.h>
+int main(){
+	char string[100];
+//	char c='b';
+	int v=0,c=0,d=0,s=0,z;
+	int j;
+	char lower;
 
+	printf("Enter a line of string:");
+	gets(string);
+
+
+	for(j=0; string[j] !='\0'; j++){
+
+		lower=tolower(string[j]);
+
+		if((lower=='a')||(lower=='e')||(lower=='i')||(lower=='o')||(lower=='u')){
+
+			v++;
+		}
+
+		else{
+			if((lower>='0') && (lower<='9')){
+				d++;
+			}
+
+			if(lower==' '){
+				s++;
+			}
+
+
+			else{
+
+				c++;
+				z=c-d;
+
+				}
+
+			}
+	}
+
+
+			printf("  Vowels: %d",v);
+		    printf("\n Consonants: %d",z);
+		    printf("\n Digits: %d",d);
+		    printf("\n White spaces: %d",s);
+
+
+	return 0;
+	}
 

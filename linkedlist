@@ -1,0 +1,99 @@
+
+
+#include<stdio.h>
+#include<conio.h>
+#include<malloc.h>
+struct node
+{
+    int info;
+    struct node *link;
+};
+struct node *head;
+
+void ins(int ele)
+{
+    struct node *temp = (struct node *)malloc(sizeof(int));
+    temp->info = ele;
+    if(head == NULL)
+    {
+        head = temp;
+        temp->link = NULL;
+    }
+    else
+    {
+        temp->link = head;
+        head= temp;
+    }
+}
+void print()
+{
+   struct node *temp = head;
+   while(temp != NULL)
+   {
+      printf("%d ",temp->info);
+      temp=temp->link;
+   };
+}
+void ins_loc(int ele, int loc)
+{
+    int i;
+    struct node *temp, *newnode;
+    newnode = (struct node*)malloc(sizeof(int));
+    newnode->info = ele;
+    temp=head;
+    for(i=1;i<loc-1;i++)
+    {
+      temp = temp->link;
+    }
+    newnode->link=temp->link;
+    temp->link=newnode;
+
+}
+void del(int loc)
+{
+    int i;
+    struct node *temp, *prev;
+    temp=head;
+    for(i=1;i<loc;i++)
+    {
+        prev=temp;
+        temp=temp->link;
+    }
+    prev->link=temp->link;
+
+}
+
+void rev()
+{
+    struct node *temp,*prev,*curr,*next;
+    temp=head;
+    prev=NULL;
+    while(temp != NULL) {
+        curr=temp;
+        next=temp->link;
+        temp->link = prev;
+        prev=curr;
+        temp=next;
+    }
+    head=curr;
+}
+
+void main()
+{
+    head=NULL;
+    ins(5);
+    ins(6);
+    ins(7);
+    ins(8);
+    ins(9);
+    ins(10);
+    ins_loc(77,3);
+    ins_loc(88,4);
+    print();
+    printf("\nDeleted linked list is: \n");
+    del(2);
+    print();
+    printf("\nReversed linked list is\n");
+    rev();
+    print();
+}
